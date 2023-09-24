@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etapa1</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&family=VT323&display=swap" rel="stylesheet">
+
+<body>
+    <div class="header">
+     <h1>Bloco De Notas</h1>
+    </div>
+   <div class="titulo">
+    <h1>Como funciona o computador</h1>
+    </div>
+    <div class="content">
+    <p>O processo de inicialização de um computador segue uma ordem fixa e independente do sistema operacional <br> em uso. Quando pressionamos o botão de energia, a corrente elétrica é ativada, alimentando os componentes da máquina. Em seguida, o BIOS (ou UEFI) entra em ação, realizando o POST (Power On Self Test) para verificar o funcionamento dos componentes.</p>
+    <p>Após a verificação bem-sucedida, o BIOS/UEFI procura um dispositivo para iniciar o sistema operacional. Isso pode ser um disco rígido,<br> SSD ou até mesmo um Live-DVD com um sistema Linux para instalação, dependendo da configuração do BIOS/UEFI. O bootloader, localizado no MBR ou na partição EFI, é então carregado, e ele é responsável por iniciar o sistema operacional ou oferecer opções de escolha, como no caso de sistemas com múltiplas instalações.</p>
+    <p>O bootloader desempenha um papel crucial no processo de inicialização, pois é responsável por carregar o sistema operacional específico instalado<br> no computador. Isso significa que, se você tiver vários sistemas operacionais em sua máquina, o bootloader permitirá que você escolha quais desejam iniciar. Por exemplo, os usuários de sistemas Linux frequentemente utilizam o GRUB para selecionar entre diferentes distribuições ou versões do sistema. Esse passo é fundamental para a flexibilidade e funcionalidade de sistemas com configurações múltiplas.</p>
+    <p>Uma vez que o sistema operacional é escolhido e carregado, uma interface de login é exibida, permitindo que o usuário acesse a máquina. A partir deste ponto, o sistema operacional assume o controle total e disponibiliza todos os recursos e aplicativos. É importante notar que, embora os detalhes do processo de inicialização possam variar entre os sistemas operacionais e as configurações<br> específicas da máquina, a sequência geral descrita aqui permanece consistente em computadores modernos.</p>
+     <p>Uma vez que o sistema operacional é escolhido e carregado, uma interface de login é exibida, permitindo que o usuário acesse a máquina. A partir deste ponto, o sistema operacional assume o controle total e disponibiliza todos os recursos e aplicativos. É importante notar que, embora os detalhes do processo de inicialização possam variar entre os sistemas operacionais e as configurações específicas da máquina, a sequência<br> geral descrita aqui permanece consistente em computadores modernos.</p>
+    </div>
+    <div class="computadores">
+        <div class="funcionamento">
+        <img src="img/on.png" id="on" class="animate">
+        <img src="img/r.png" id="r1" class="hidden">
+        <img src="img/bios.gif" id="bios" class="hidden">
+        <img src="img/r.png" id="r2" class="hidden">
+        <img src="img/boot.gif" id="boot" class="hidden">
+        <img src="img/r.png" id="r3" class="hidden">
+        <img src="img/windows.jpeg" id="windows" class="hidden">
+        </div>
+    </div>
+     <button class="back-button" onclick="voltarParaOS()">Voltar para OS</button>
+    
+    <script type="text/JavaScript" src="js/etapa1.js"></script>
+    <link rel="stylesheet" href="css/etapa1.css">
+    <link rel="stylesheet" href="css/reset.css">
+</body>
+</html>

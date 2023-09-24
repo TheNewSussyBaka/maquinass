@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+    .content, .titulo { 
+        text-align: center; 
+        margin: 0 auto;
+        font-family: 'Martian Mono', monospace;
+        font-size: larger;
+        max-width: 800px; 
+        padding: 20px; 
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #777;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .header h1 {
+        text-align: center;
+        margin: 0;
+    }
+
+.funcionamento {
+      width: 180px;
+      height: 180px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; 
+}
+#on {
+    cursor: pointer;
+}
+#r1 {
+   cursor:cell;
+}
+#bios {
+    cursor: pointer;
+}
+#r2 {
+    cursor: cell;
+}
+#boot {
+    cursor: pointer;
+}
+#r3 {
+    cursor: cell;
+}
+#windows {
+    cursor: auto;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate {
+    animation: blink 1s infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+.back-button {
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px; 
+    left: 20px; 
+    z-index: 999;
+}
+.back-button:hover {
+    background-color: #FF6666;
+}
+

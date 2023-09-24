@@ -1,0 +1,140 @@
+body {
+    background-image: url('../img/background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+
+
+.desktop {
+    display: flex;
+    flex-direction: flex-start;
+    align-items: center;
+    position: relative;
+    padding-top: 30px; 
+}
+
+img {
+    width: 80px; 
+}
+
+.apps {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: left;
+    position: relative;
+    padding-top: 30px;
+    margin-right: 50px;
+}
+
+.folder {
+    cursor: pointer;    
+}
+
+.app-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    height: 50px;
+    width: 50px;
+    margin-right: 50px; 
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.app-icon:hover {
+    transform: scale(1.2); 
+}
+
+.notepad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-top: 20px; 
+}
+
+
+.notepad:hover {
+    transform: scale(1.2);
+}
+
+.taskbar {
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+#start-button {
+    background-color: #316AC5;
+    padding: 8px 15px;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+.task-icons {
+    display: flex;
+    gap: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+.folder {
+    color: white;
+    font-size: medium;
+}
+.explorer {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    overflow: auto;
+}
+
+.explorer-header {
+    background-color: #316AC5;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.explorer-title {
+    font-weight: bold;
+}
+
+.explorer-close-button {
+    cursor: pointer;
+}
+
+.explorer-content {
+    padding: 20px;
+}
+#clock {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #000;
+    padding: 5px; 
+    background-color: #ECECEC; 
+    border: 2px solid #000; 
+    font-family: 'VT323', monospace; 
+}
